@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee's Kitchen | Cozy Café & Fast Food in Chromepet, Chennai</title>
+    <meta name="description" content="Experience Bee's Kitchen in Chromepet, Chennai. Serving delicious burgers, famous loaded fries, rolls, refreshing mojitos, and Chinese specials at budget-friendly prices.">
+    <meta name="keywords" content="Bees Kitchen, Cafe Chromepet, Fast food Chennai, Loaded Fries Chromepet, Burgers Chennai, Best cafe in Chromepet">
+    <meta name="author" content="Bee's Kitchen">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://beeskitchen.in/">
+    <meta property="og:title" content="Bee's Kitchen | Delicious Food, Great Ambience, Affordable Prices">
+    <meta property="og:description" content="Experience Bee's Kitchen - where taste meets quality in the heart of Chromepet. Premium café feel with budget-friendly prices.">
+    <meta property="og:image" content="assets/hero_bg.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">🐝</span>
+                <span class="logo-text">Bee's <span class="highlight">Kitchen</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#why-us" class="nav-link">Why Us</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="cart-toggle-btn" id="cart-toggle" aria-label="Open Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </button>
+                <a href="#menu" class="btn btn-primary nav-cta">Order Online</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <a href="#home" class="logo">
+                <span class="logo-icon">🐝</span>
+                <span class="logo-text">Bee's <span class="highlight">Kitchen</span></span>
+            </a>
+            <button class="drawer-close" id="drawer-close" aria-label="Close Navigation Menu">&times;</button>
+        </div>
+        <nav class="drawer-links">
+            <a href="#home" class="drawer-link">Home</a>
+            <a href="#about" class="drawer-link">About</a>
+            <a href="#menu" class="drawer-link">Menu</a>
+            <a href="#why-us" class="drawer-link">Why Us</a>
+            <a href="#gallery" class="drawer-link">Gallery</a>
+            <a href="#contact" class="drawer-link">Contact</a>
+            <a href="#menu" class="btn btn-primary drawer-cta">Order Online</a>
+        </nav>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <div class="hero-text-container animate-fade-in">
+                    <div class="rating-badge">
+                        <span class="star-rating">⭐ 4.7 Rating</span>
+                        <span class="badge-separator">|</span>
+                        <span class="review-count">200+ Reviews</span>
+                    </div>
+                    <h1 class="hero-title">Delicious Food, <br>Great Ambience, <br>Affordable Prices</h1>
+                    <p class="hero-subtitle">Experience Bee's Kitchen – where taste meets quality in the heart of Chromepet, Chennai.</p>
+                    <div class="hero-actions">
+                        <a href="#menu" class="btn btn-primary">View Menu</a>
+                        <a href="#menu" class="btn btn-outline scroll-to-menu-cart">Order Online</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,4.75,55.05,10.12,83.1,13.84c90.22,12,183.56,9.14,271.49-3.72Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section section-padding" id="about">
+            <div class="container grid grid-2-col">
+                <div class="about-image-container reveal">
+                    <div class="about-img-wrapper">
+                        <img src="assets/ambience.png" alt="Bee's Kitchen Cozy Ambience" class="about-img main-about-img">
+                        <div class="floating-experience-card">
+                            <span class="exp-number">4.7</span>
+                            <div class="exp-text">
+                                <span class="stars">⭐⭐⭐⭐★</span>
+                                <span class="lbl">Top Rated Café</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text-container reveal delay-100">
+                    <span class="section-tagline">Welcome to Bee's Kitchen</span>
+                    <h2 class="section-title">Serving Happiness One Bite at a Time</h2>
+                    <p class="about-description">Bee's Kitchen is Chromepet's favorite cozy café and fast-food hub. We are committed to crafting delicious, budget-friendly food made with premium ingredients. Whether you are craving our famous loaded fries, jumbo chicken rolls, or refreshing mint mojitos, we provide a welcoming atmosphere and friendly service.</p>
+                    
+                    <div class="about-highlights-grid">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🍔</span>
+                            <div class="highlight-info">
+                                <h3>Popular Burgers</h3>
+                                <p>Jumbo chicken rolls & towers</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🍟</span>
+                            <div class="highlight-info">
+                                <h3>Loaded Fries</h3>
+                                <p>Famous cheesy creations</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🍹</span>
+                            <div class="highlight-info">
+                                <h3>Refreshing Mojitos</h3>
+                                <p>Ice-cold flavor collection</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🍗</span>
+                            <div class="highlight-info">
+                                <h3>Chinese Specials</h3>
+                                <p>Dragon Chicken & Fried Rice</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="badges-row">
+                        <span class="about-badge"><span class="badge-icon">🏳️🌈</span> LGBTQ+ Friendly</span>
+                        <span class="about-badge"><span class="badge-icon">🚗</span> Drive Through Available</span>
+                        <span class="about-badge"><span class="badge-icon">🛵</span> No-Contact Delivery</span>
+                        <span class="about-badge"><span class="badge-icon">🍽️</span> Dine-In Available</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Menu Section -->
+        <section class="menu-section section-padding" id="menu">
+            <div class="container text-center reveal">
+                <span class="section-tagline">Explore Our Culinary Art</span>
+                <h2 class="section-title">Featured Menu</h2>
+                <p class="section-subtitle">Browse our fresh menu cards. Add items to your cart and check out easily via WhatsApp!</p>
+                
+                <!-- Search & Filters Container -->
+                <div class="menu-filters-wrapper">
+                    <div class="search-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        <input type="text" id="menu-search" placeholder="Search delicious food..." aria-label="Search Menu Items">
+                        <button class="clear-search-btn" id="clear-search" aria-label="Clear Search">&times;</button>
+                    </div>
+
+                    <div class="category-tabs-wrapper">
+                        <div class="category-tabs" id="category-tabs-container">
+                            <!-- Rendered by JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Cards Grid -->
+                <div class="menu-grid grid" id="menu-items-grid">
+                    <!-- Rendered Dynamically by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Customers Love Us Section -->
+        <section class="why-us-section section-padding" id="why-us">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tagline">Why Choose Us</span>
+                    <h2 class="section-title">Why Customers Love Bee's Kitchen</h2>
+                </div>
+
+                <div class="why-us-grid grid grid-3-col reveal">
+                    <!-- Card 1 -->
+                    <div class="why-card">
+                        <div class="why-icon-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="why-icon"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+                        </div>
+                        <h3>Great Taste</h3>
+                        <p>Top-notch flavors crafted with expertise and loved by all our customers.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="why-card">
+                        <div class="why-icon-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="why-icon"><path d="M6 3h12"/><path d="M6 8h12"/><path d="M6 13h8.5a4.5 4.5 0 0 1 0 9"/><path d="M18 3c0 6-7 10-7 10H6"/></svg>
+                        </div>
+                        <h3>Affordable Prices</h3>
+                        <p>Delicious premium food without breaking your budget. True value for money.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="why-card">
+                        <div class="why-icon-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="why-icon"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><path d="M6 2v2"/><path d="M10 2v2"/><path d="M14 2v2"/></svg>
+                        </div>
+                        <h3>Cozy Ambience</h3>
+                        <p>A warm, welcoming, and relaxed place to hang out with friends and family.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="why-card">
+                        <div class="why-icon-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="why-icon"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 2 5.5a7 7 0 0 1-10 12.5Z"/><path d="M19 2c-2.26 4.33-5.27 7.14-8 10"/></svg>
+                        </div>
+                        <h3>Quality Ingredients</h3>
+                        <p>We source only fresh, high-quality, and clean ingredients for every single dish.</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="why-card">
+                        <div class="why-icon-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="why-icon"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                        <h3>Fast Service</h3>
+                        <p>Quick preparation times, efficient delivery, and warm friendly staff.</p>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="why-card">
+                        <div class="why-icon-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="why-icon"><path d="M12 3v18"/><path d="M5 12h14"/><path d="M5 12c0 3 3 5 3 5h8s3-2 3-5"/></svg>
+                        </div>
+                        <h3>Good Quantity</h3>
+                        <p>Satisfying and generous servings that ensure you leave full and happy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Reviews Section -->
+        <section class="reviews-section section-padding">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tagline">Testimonials</span>
+                    <h2 class="section-title">What Our Bees Say</h2>
+                </div>
+
+                <div class="reviews-grid reveal">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">S</div>
+                            <div class="reviewer-meta">
+                                <h4>Sanjay Kumar</h4>
+                                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Nice ambience, nice service, and budget friendly too. The staff is polite and welcoming. Highly recommended for evening hangouts!"</p>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">P</div>
+                            <div class="reviewer-meta">
+                                <h4>Priya Dharshini</h4>
+                                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Dragon chicken and chicken fried rice were our favorites. The flavors are absolutely authentic and the quantity is huge!"</p>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-avatar">A</div>
+                            <div class="reviewer-meta">
+                                <h4>Abishek R</h4>
+                                <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <p class="review-text">"Good place with good price, quantity, and quality. The loaded fries are loaded with cheese for real! Best cafe in Chromepet."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section section-padding" id="gallery">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-tagline">Visual Treat</span>
+                    <h2 class="section-title">Captured Ambience & Food</h2>
+                    <p class="section-subtitle font-alt">Take a sneak peek inside our cozy kitchen and popular recipes.</p>
+                </div>
+
+                <div class="gallery-masonry reveal">
+                    <!-- Item 1 -->
+                    <div class="gallery-item" data-image="assets/ambience.png" data-caption="Cozy Cafe Ambience">
+                        <img src="assets/ambience.png" alt="Cozy Cafe Ambience" loading="lazy">
+                        <div class="gallery-hover">
+                            <div class="zoom-icon">🔍</div>
+                            <span>Cozy Ambience</span>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="gallery-item" data-image="assets/loaded_fries.png" data-caption="Cheesy Loaded Fries">
+                        <img src="assets/loaded_fries.png" alt="Cheesy Loaded Fries" loading="lazy">
+                        <div class="gallery-hover">
+                            <div class="zoom-icon">🔍</div>
+                            <span>Cheesy Loaded Fries</span>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="gallery-item" data-image="assets/crispy_burger.png" data-caption="Gourmet Chicken Burger">
+                        <img src="assets/crispy_burger.png" alt="Gourmet Chicken Burger" loading="lazy">
+                        <div class="gallery-hover">
+                            <div class="zoom-icon">🔍</div>
+                            <span>Gourmet Chicken Burger</span>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="gallery-item" data-image="assets/mint_mojito.png" data-caption="Refreshing Mint Mojito">
+                        <img src="assets/mint_mojito.png" alt="Refreshing Mint Mojito" loading="lazy">
+                        <div class="gallery-hover">
+                            <div class="zoom-icon">🔍</div>
+                            <span>Refreshing Mint Mojito</span>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="gallery-item" data-image="assets/hero_bg.png" data-caption="Our Signature Combinations">
+                        <img src="assets/hero_bg.png" alt="Our Signature Combinations" loading="lazy">
+                        <div class="gallery-hover">
+                            <div class="zoom-icon">🔍</div>
+                            <span>Signature Combinations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location-section section-padding" id="contact">
+            <div class="container grid grid-2-col">
+                <div class="location-info reveal">
+                    <span class="section-tagline">Find Us</span>
+                    <h2 class="section-title">Visit Bee's Kitchen</h2>
+                    <p class="location-description">We are conveniently located in Chromepet, Chennai. Drop by for dynamic vibes and freshly cooked meals!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>Bee's Kitchen<br>64, Dr Rajendra Prasad Rd, Anna Nagar, Hasthinapuram, Chromepet, Chennai, Tamil Nadu 600044</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+918148604388" class="contact-link">+91 81486 04388</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span class="contact-icon">⏰</span>
+                            <div class="contact-text">
+                                <h4>Opening Hours</h4>
+                                <p>Open Daily<br>3:00 PM – 11:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-map reveal delay-100">
+                    <div class="map-container">
+                        <!-- Custom Embed Google Map styled matching theme -->
+                        <iframe 
+                            src="https://maps.google.com/maps?q=Bee's%20Kitchen,%20Dr%20Rajendra%20Prasad%20Rd,%20Hasthinapuram,%20Chromepet,%20Chennai&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Bee's Kitchen Google Maps Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#home" class="logo footer-logo">
+                    <span class="logo-icon">🐝</span>
+                    <span class="logo-text">Bee's <span class="highlight">Kitchen</span></span>
+                </a>
+                <p class="brand-msg">"Bee's Kitchen – Serving Happiness One Bite at a Time."</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#why-us">Why Choose Us</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Find Us</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Popular Menu</h4>
+                <a href="#menu" class="menu-filter-link" data-filter="best-sellers">Best Sellers</a>
+                <a href="#menu" class="menu-filter-link" data-filter="burgers-rolls">Burgers & Rolls</a>
+                <a href="#menu" class="menu-filter-link" data-filter="chinese-specials">Chinese Specials</a>
+                <a href="#menu" class="menu-filter-link" data-filter="beverages">Beverages</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Details</h4>
+                <p>📍 64, Dr Rajendra Prasad Rd, Anna Nagar, Hasthinapuram, Chromepet, Chennai - 600044</p>
+                <p>📞 <a href="tel:+918148604388">+91 81486 04388</a></p>
+                <p>✉️ info@beeskitchen.in</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Bee's Kitchen. All Rights Reserved. Designed for Premium Café Experience.</p>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Slide Drawer -->
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button class="cart-close" id="cart-close" aria-label="Close Shopping Cart">&times;</button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-items" id="cart-items-container">
+                <!-- Rendered by JS -->
+                <div class="empty-cart-message">
+                    <span>🛒</span>
+                    <p>Your cart is empty.</p>
+                    <a href="#menu" class="btn btn-primary btn-sm close-cart-go-menu">Browse Menu</a>
+                </div>
+            </div>
+        </div>
+        <div class="cart-footer" id="cart-footer">
+            <div class="cart-summary">
+                <div class="summary-line">
+                    <span>Subtotal:</span>
+                    <span class="summary-price" id="cart-subtotal">₹0</span>
+                </div>
+                <div class="summary-line note">
+                    <span>*Delivery or Parcel charges extra</span>
+                </div>
+            </div>
+            <button class="btn btn-primary btn-block" id="whatsapp-checkout">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16" style="margin-right: 8px; vertical-align: middle;">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 8 .258a7.85 7.85 0 0 0-7 11.58l.512 2.747a.498.498 0 0 0 .585.394l2.87-.714A7.82 7.82 0 0 0 8 15.635c4.341 0 7.858-3.518 7.858-7.858a7.8 7.8 0 0 0-2.257-5.451m-2.28 10.369c-.183.093-.369.108-.544.08-.176-.028-.352-.089-.529-.16-.35-.145-.69-.328-1.025-.544-.3-.195-.572-.423-.822-.68a9 9 0 0 1-1.306-1.745c-.255-.421-.429-.877-.514-1.353-.083-.456-.051-.912.1-1.332.1-.28.267-.532.483-.734.2-.187.42-.312.65-.373.18-.046.366-.058.548-.035.176.023.344.095.493.21.3.23.55.518.745.856.12.208.188.44.197.683-.005.15-.042.298-.108.432-.066.13-.162.247-.282.342-.1.08-.2.152-.3.22-.09.06-.18.12-.27.18-.174.12-.319.28-.426.47-.11.2-.167.432-.164.666.009.43.14.845.378 1.21.246.376.574.693.957.925.38.23.804.383 1.248.448.455.066.914-.009 1.33-.217.15-.075.29-.175.405-.296.115-.12.204-.263.26-.422.067-.189.09-.393.07-.597-.02-.19-.092-.37-.212-.52-.16-.2-.38-.35-.63-.44-.22-.08-.453-.102-.685-.064-.176.028-.34.113-.47.24-.09.09-.17.19-.24.3-.07.11-.14.22-.2.33-.11.19-.28.34-.49.42-.2.074-.42.08-.62.015-.415-.133-.8-.344-1.135-.625-.333-.28-.616-.614-.834-.99-.18-.312-.276-.673-.28-1.04a2.7 2.7 0 0 1 .15-1.01c.08-.2.23-.37.42-.48.16-.095.33-.17.5-.24.16-.067.31-.154.45-.26.23-.17.4-.41.48-.69.07-.24.08-.5.03-.75-.05-.23-.17-.44-.34-.6-.28-.27-.61-.48-.97-.62-.35-.14-.73-.2-1.1-.18-.42.02-.83.16-1.18.4-.33.22-.6.52-.78.88-.2.4-.31.84-.33 1.29-.02.48.07.96.26 1.4.19.45.46.86.8 1.21l1.6 1.6c.48.48 1.04.87 1.66 1.15.63.28 1.3.46 1.98.54.56.06 1.13.04 1.69-.06.52-.1 1.02-.29 1.48-.56.41-.24.76-.57 1.02-.97.23-.36.37-.77.42-1.19a4.4 4.4 0 0 0-.15-1.77 4.1 4.1 0 0 0-.81-1.39"/></svg>
+                Send Order to WhatsApp
+            </button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div class="lightbox-modal" id="lightbox-modal">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous Image">&#10094;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+            <p id="lightbox-caption" class="lightbox-caption"></p>
+        </div>
+        <button class="lightbox-next" id="lightbox-next" aria-label="Next Image">&#10095;</button>
+    </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <!-- Floating WhatsApp -->
+        <a href="https://wa.me/918148604388?text=Hi%20Bee's%20Kitchen!%20I'd%20like%20to%20know%20more%20about%20your%20menu." 
+           class="floating-btn whatsapp-float" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           aria-label="Chat on WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 8 .258a7.85 7.85 0 0 0-7 11.58l.512 2.747a.498.498 0 0 0 .585.394l2.87-.714A7.82 7.82 0 0 0 8 15.635c4.341 0 7.858-3.518 7.858-7.858a7.8 7.8 0 0 0-2.257-5.451m-2.28 10.369c-.183.093-.369.108-.544.08-.176-.028-.352-.089-.529-.16-.35-.145-.69-.328-1.025-.544-.3-.195-.572-.423-.822-.68a9 9 0 0 1-1.306-1.745c-.255-.421-.429-.877-.514-1.353-.083-.456-.051-.912.1-1.332.1-.28.267-.532.483-.734.2-.187.42-.312.65-.373.18-.046.366-.058.548-.035.176.023.344.095.493.21.3.23.55.518.745.856.12.208.188.44.197.683-.005.15-.042.298-.108.432-.066.13-.162.247-.282.342-.1.08-.2.152-.3.22-.09.06-.18.12-.27.18-.174.12-.319.28-.426.47-.11.2-.167.432-.164.666.009.43.14.845.378 1.21.246.376.574.693.957.925.38.23.804.383 1.248.448.455.066.914-.009 1.33-.217.15-.075.29-.175.405-.296.115-.12.204-.263.26-.422.067-.189.09-.393.07-.597-.02-.19-.092-.37-.212-.52-.16-.2-.38-.35-.63-.44-.22-.08-.453-.102-.685-.064-.176.028-.34.113-.47.24-.09.09-.17.19-.24.3-.07.11-.14.22-.2.33-.11.19-.28.34-.49.42-.2.074-.42.08-.62.015-.415-.133-.8-.344-1.135-.625-.333-.28-.616-.614-.834-.99-.18-.312-.276-.673-.28-1.04a2.7 2.7 0 0 1 .15-1.01c.08-.2.23-.37.42-.48.16-.095.33-.17.5-.24.16-.067.31-.154.45-.26.23-.17.4-.41.48-.69.07-.24.08-.5.03-.75-.05-.23-.17-.44-.34-.6-.28-.27-.61-.48-.97-.62-.35-.14-.73-.2-1.1-.18-.42.02-.83.16-1.18.4-.33.22-.6.52-.78.88-.2.4-.31.84-.33 1.29-.02.48.07.96.26 1.4.19.45.46.86.8 1.21l1.6 1.6c.48.48 1.04.87 1.66 1.15.63.28 1.3.46 1.98.54.56.06 1.13.04 1.69-.06.52-.1 1.02-.29 1.48-.56.41-.24.76-.57 1.02-.97.23-.36.37-.77.42-1.19a4.4 4.4 0 0 0-.15-1.77 4.1 4.1 0 0 0-.81-1.39"/>
+            </svg>
+        </a>
+
+        <!-- Floating Cart Trigger for Mobile -->
+        <button class="floating-btn cart-float" id="mobile-cart-float" aria-label="View Order Cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+            <span class="cart-badge" id="mobile-cart-count">0</span>
+        </button>
+
+        <!-- Scroll to Top -->
+        <button class="floating-btn scroll-top-btn" id="scroll-top" aria-label="Scroll to Top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+        </button>
+    </div>
+
+    <!-- Application Script -->
+    <script src="app.js"></script>
+</body>
+</html>
